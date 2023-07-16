@@ -1,0 +1,93 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 70vh;
+  width: 60dvh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+}
+.App input{
+  
+  font-family: 'Open Sans';
+  padding-left: 10px;
+  margin-right: 20px;
+
+  
+}
+#basic-addon1{
+  margin-left: 20px;
+  
+}
+#id-company-text1 {
+  color:rgb(255, 255, 255) !important;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.vista2{
+        font-family: 'Open Sans';
+        font-weight: 100;
+        background-repeat: no-repeat;
+        background-image: url(https://sistemainformacion.azteca-comunicaciones.com:8087/Images/bg/bg-2.jpg?v2018);
+        overflow: hidden;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+}
+
+
+.datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.datos input{
+ 
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 5px;
+
+}
+
+#card2.card-body{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.datos button{
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+  
+  
+}
+
+.app{
+  display: flex;
+  align-items: center;
+}
+
+.container2{
+  margin-top: 160px;
+}
+
+@media(max-width: 750px) {
+  .container2{
+    margin-top: 160px;
+  }
+}
+@media(max-width: 950px) {
+  .container2{
+    margin-top: 170px;
+  }
+}

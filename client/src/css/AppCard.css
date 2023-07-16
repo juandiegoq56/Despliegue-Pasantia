@@ -1,0 +1,20 @@
+.conteniter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    
+    width: 90%;
+}
+.app-card-table {
+    
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  .app-card-table th,
+  .app-card-table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
