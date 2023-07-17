@@ -3,6 +3,7 @@ const app = express();
 const mysql = require("mysql");
 const cors = require("cors");
 const multer = require("multer");
+const cors_proxy = require('cors-anywhere');
 
 app.use(express.json());
 const db = mysql.createConnection({
@@ -47,6 +48,17 @@ app.get("/usuarios", (req, res) => {
       res.send(result);
     }
   });
+});
+
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 8080;
+
+const server = cors_proxy.createServer({
+  originWhitelist: [], // Permitir todos los orígenes
+});
+
+server.listen(port, host, () => {
+  console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
 
 app.listen(3001, () => {
