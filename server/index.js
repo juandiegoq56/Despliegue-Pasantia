@@ -9,7 +9,7 @@ const db=mysql.createConnection({
 
     host:"localhost",
     user:"root",
-    password:"",
+    password:"password",
     database:"usuarios"
 
 });
@@ -92,7 +92,11 @@ app.get("/usuarios",(req,res)=>{
         res.status(401).json({ error: 'Credenciales de inicio de sesión inválidas' });
       }
     });*/
-  
+    const corsOptions = {
+        origin: 'http://10.142.6.71',
+      };
+      
+      app.use(cors(corsOptions));
     
 app.listen(3001,()=>{
   
