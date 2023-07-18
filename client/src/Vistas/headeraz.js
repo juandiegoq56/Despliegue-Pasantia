@@ -18,7 +18,7 @@ const Header = () => {
     useEffect(() => {
         const val = async () => {
           try {
-            const response = await axios.get('http://localhost:3001/usuarios');
+            const response = await axios.get('http://10.142.6.71:3001/usuarios');
             const nombre = localStorage.getItem("Nombre");
             const data = response.data;
             const user = data.find(user => user.Nombre === nombre);
@@ -107,7 +107,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li class="nav-item text-center mt-xl-2 mt-lg-2 mt-md-0 mt-sm-0 mt-0 mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 mb-2 mx-1">
-                {!isLogged ? null :  <a href='/Perfil' class="nav-link bg-acc-yellow rounded-pill pse" >Usuario: {usuariosList.Nombre} {usuariosList.Apellido} </a>}
+                {!isLogged ? null :  <a href='/perfil' class="nav-link bg-acc-yellow rounded-pill pse" >Usuario: {usuariosList.Nombre} {usuariosList.Apellido} </a>}
                 </li>
                 <li class=" nav-item text-center mt-xl-2 mt-lg-2 mt-md-0 mt-sm-0 mt-0  mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 mb-2">
                 {isLogged ? (
