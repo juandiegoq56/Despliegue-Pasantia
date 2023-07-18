@@ -67,7 +67,7 @@ function App1() {
     const formData = new FormData();
     formData.append('imagen', imagen);
 
-    axios.post('http://localhost:3001/create', formData)
+    axios.post('http://10.142.6.71:3001/create', formData)
       .then((res) => {
         console.log(res.data+'res');
       })

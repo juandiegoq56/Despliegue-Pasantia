@@ -21,10 +21,10 @@ app.use(cors(corsOptions));
 
 app.post("/create", (req, res) => {
   const Nombre = req.body.Nombre;
-  const Apellido = req.body.Apellido;
-  const Email = req.body.Email;
+  const Apellido = req.body.body.Email;
   const password = req.body.password;
-
+   
+  const Email = req.
   db.query(
     "INSERT INTO usuarios(Nombre,Apellido,Email,password) VALUES (?,?,?,?)",
     [Nombre, Apellido, Email, password],

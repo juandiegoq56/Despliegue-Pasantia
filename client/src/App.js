@@ -19,8 +19,8 @@ function App() {
       <Route path="/home" element={<ProtectedRoute  redirectTo="/login"><Dashboard /></ProtectedRoute>} />
       <Route path="/login" element={<ProtectedRouteLogin  redirectTo="/Home"><App3 /></ProtectedRouteLogin>} />
       <Route path="/Register" element={<ProtectedRouteLogin  redirectTo="/Home"><App1 /></ProtectedRouteLogin>} />
-      <Route path="/Perfil" element={<App5/>} />
-      <Route path="/H" element={<ProtectedRouteLogin  redirectTo="/Home"><Header /></ProtectedRouteLogin>} />
+      <Route path="/perfil" element={<ProtectedRoute  redirectTo="/login"><App5 /></ProtectedRoute>} />
+     
         
         {/* Otras rutas */}
       </Routes>

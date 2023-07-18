@@ -8,7 +8,7 @@ export default function useUser() {
   const login = useCallback(async () => {
     try {
       // Realizar la solicitud para obtener los datos de la base de datos
-      const response = await axios.get('http://localhost:3001/usuarios');
+      const response = await axios.get('http://10.142.6.71:3001/usuarios');
       const data = response.data
       const name = localStorage.getItem("Nombre");
       const contra = localStorage.getItem("Contra");
