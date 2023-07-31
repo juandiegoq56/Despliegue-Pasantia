@@ -21,6 +21,8 @@ export default function useUser() {
         // Iniciar sesión actualizando el estado del JWT en el contexto 
         setJWT('test');
         localStorage.setItem('jwt', 'test');
+        localStorage.removeItem('Nombre');
+        localStorage.removeItem('Contra');
       }
       else {
         alert('Credenciales inválidas');
@@ -37,8 +39,7 @@ export default function useUser() {
   const logout = useCallback(() => {
     setJWT(null);
     localStorage.removeItem('jwt');
-    localStorage.removeItem('Nombre');
-    localStorage.removeItem('Contra');
+    
   }, [setJWT]);
   
   
