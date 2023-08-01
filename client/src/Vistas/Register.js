@@ -40,7 +40,7 @@ function App1() {
   
   const add = () => {
     if (validateEmail(Email) ) {
-      Axios.post('http://localhost:3001/create', {
+      Axios.post('http://10.142.6.71:3001/create', {
         Nombre: Nombre,
         Apellido:Apellido,
         password: password1,
